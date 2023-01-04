@@ -37,6 +37,7 @@ type Env struct {
 // The inputs 't' and 'timeout' are optional.
 // If 't' is specified, some log messages are displayed via 't.Log()'.
 // If 'timeout' is not '0', starting entities (such as servers and clients) must complete in the given duration,
+//
 //	otherwise it will fail.
 func NewEnv(t *testing.T, timeout time.Duration) *Env {
 	return &Env{

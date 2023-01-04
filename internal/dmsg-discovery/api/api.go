@@ -231,6 +231,7 @@ func (a *API) deregisterEntry() func(w http.ResponseWriter, r *http.Request) {
 // URI: /dmsg-discovery/entry/[?timeout={true|false}]
 // Method: POST
 // Args:
+//
 //	json serialized entry object
 func (a *API) setEntry() func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -320,6 +321,7 @@ func (a *API) setEntry() func(w http.ResponseWriter, r *http.Request) {
 // URI: /dmsg-discovery/entry
 // Method: DELETE
 // Args:
+//
 //	json serialized entry object
 func (a *API) delEntry() func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
